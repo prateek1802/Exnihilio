@@ -68,7 +68,7 @@ var currentPos = 0;
     });
 
 //Smooth Scrolling on click on the Navbar
-$(document).on('click', 'a[href^="#about"]', function (event) {
+$(document).on('click', 'a[href^="#home"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -76,7 +76,7 @@ $(document).on('click', 'a[href^="#about"]', function (event) {
     }, 500);
 });
 
-$(document).on('click', 'a[href^="#career"]', function (event) {
+$(document).on('click', 'a[href^="#about"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -92,10 +92,15 @@ $(document).on('click', 'a[href^="#contact"]', function (event) {
     }, 500);
 });
 
-$(document).on('click', 'a[href^="#education"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+//Typography effect for homepage
+$(function(){
+    $(".write").typed({
+        strings: ["Creativity", "Sincerity", "Ethics", "Professionalism"],
+        typeSpeed: 0.5,
+        loop: !0, // did the trick for repeating
+        startDelay: 700,
+        backDelay: 700,
+    });
 });
+
+//Highlight active div

@@ -6,21 +6,41 @@ body,html{
     height: 50px;
 }
 
+.container-fluid{
+    height: 100%;
+}
+
 .row{
     height: 100%;
 }
+
+#home{
+    background-color: black;
+    background-image: url('assets/home.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-left: 20px;
+    font-family: 'Forum', cursive;
+    color: white;
+    font-size: 40px;
+}
+
 #about{
     background-color: seagreen;
-}
-
-#education{
-    background-color:forestgreen;
-}
-
-#career{
-    background-color: yellowgreen;
+    padding-top: 50px;
 }
 
 #contact{
     background-color: blueviolet;
+    padding-top: 50px;
 }
+
+.write{
+    font-family: 'Forum', cursive;
+    color: white;
+    font-size: 40px;
+}
+
