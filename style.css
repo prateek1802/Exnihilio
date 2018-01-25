@@ -1,11 +1,26 @@
-#nav-1{
-    opacity: 0.25; 
-    filter:(opacity=50);
+body,html{
+    height: 100%;
 }
-#image{
-    background-image: url("assets\main.jpg"); 
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 1200px;
+
+.navbar{
+    height: 50px;
+}
+
+.row{
+    height: 100%;
+}
+#about{
+    background-color: seagreen;
+}
+
+#education{
+    background-color:forestgreen;
+}
+
+#career{
+    background-color: yellowgreen;
+}
+
+#contact{
+    background-color: blueviolet;
 }
