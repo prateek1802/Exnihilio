@@ -1,8 +1,9 @@
-/*$(document).ready(function(){
-    $('.loading').delay(3000).fadeOut(500,function(){
-        $('.content').fadeIn(500);
+$(document).ready(function(){
+    $('.loading').delay(2500).fadeOut(500,function(){
+        $('.navbar').fadeIn(1500);
+        $('.container-fluid').fadeIn(3500);
     })
-});*/
+});
 
 //Scrolling from one div to another
 var scrolling = false;
@@ -98,9 +99,7 @@ $(function(){
         strings: ["Creativity", "Sincerity", "Ethics", "Professionalism"],
         typeSpeed: 0.5,
         loop: !0, // did the trick for repeating
-        startDelay: 700,
-        backDelay: 700,
+        startDelay: 1000,
+        backDelay: 1000,
     });
 });
-
-//Highlight active div

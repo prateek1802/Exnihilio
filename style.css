@@ -2,12 +2,31 @@ body,html{
     height: 100%;
 }
 
+.loading{
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    background-image: url('assets/loading.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: lighten;
+    background-color: rgba(255,255,255,0.6);
+}
+
 .navbar{
     height: 50px;
+    display: none;
+}
+
+#bars{
+    padding: 10px 10px 10px 10px;
 }
 
 .container-fluid{
     height: 100%;
+    display: none;
 }
 
 .row{
@@ -15,17 +34,20 @@ body,html{
 }
 
 #home{
+    content: "";
     background-color: black;
     background-image: url('assets/home.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 50px;
     padding-left: 20px;
     font-family: 'Forum', cursive;
-    color: white;
     font-size: 40px;
+}
+
+.typo{
+    color:white;
 }
 
 #about{
