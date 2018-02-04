@@ -15,11 +15,6 @@ body,html{
     background-color: rgba(255,255,255,0.6);
 }
 
-.navbar{
-    height: 50px;
-    display: none;
-}
-
 #bars{
     padding: 10px 10px 10px 10px;
 }
@@ -51,7 +46,6 @@ body,html{
 }
 
 #about{
-    background-color: seagreen;
     padding-top: 50px;
 }
 
