@@ -13,6 +13,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
       <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
       <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/css" href="menu.css">
       <script src="script.js"></script>
       <!--Typing effect Script-->
       <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
@@ -27,45 +28,46 @@
     <div class="loading">
       <img src="assets/exx.gif" style="width: 450px; height: 250px; margin-top: 150px" class="img-responsive">
     </div>
-    <!-- Navbar Starts-->
-    <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#home">Exnihilo</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#about">About Us
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>-->
-
-
-
-    </nav>
 
     <!--Rest of the Body-->
 
     <!-- Home Screen-->
+
+    
     <div class="container-fluid">
+        <!-- Hamburger Menu-->
+
+        <div id="myNav" class="scrollTo overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </div>
+          
+        </div>
+          
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span onclick="openNav()">open</span>
+
       <div class="row scrollTo" id="home">
-          <i class="fa fa-bars" id="bars"></i>
-          <p class="typo">We have the following qualities: <span class="write"></span></p>
+        <p class="typo">We have the following qualities: <span class="write"></span></p>
       </div>
-    <!-- About Screen-->
+
+      <!-- About Screen-->
       <div class="row scrollTo" id="about">
+
       </div>
-    <!--Contact Screen -->
+      <!--Contact Screen -->
       <div class="row scrollTo" id="contact">
       </div>
+
     </div>
+    
   </body>
 </html>

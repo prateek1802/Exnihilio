@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('.loading').delay(2500).fadeOut(500,function(){
+    $('.loading').delay(200).fadeOut(500,function(){
         $('.navbar').fadeIn(1500);
-        $('.container-fluid').fadeIn(3500);
+        $('.container-fluid').fadeIn(300);
     })
 });
 
@@ -103,3 +103,15 @@ $(function(){
         backDelay: 1000,
     });
 });
+
+
+//Hamburger Menu
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+} 
+
