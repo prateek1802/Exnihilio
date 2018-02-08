@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('.loading').delay(200).fadeOut(500,function(){
-        $('.navbar').fadeIn(1500);
-        $('.container-fluid').fadeIn(300);
+    $('#loading').delay(500).fadeOut(500,function(){
+        $('#head').fadeIn(600);
+        $('#content').fadeIn(300);
     })
 });
 
@@ -93,18 +93,6 @@ $(document).on('click', 'a[href^="#contact"]', function (event) {
     }, 500);
 });
 
-//Typography effect for homepage
-$(function(){
-    $(".write").typed({
-        strings: ["Creativity", "Sincerity", "Ethics", "Professionalism"],
-        typeSpeed: 0.5,
-        loop: !0, // did the trick for repeating
-        startDelay: 1000,
-        backDelay: 1000,
-    });
-});
-
-
 //Hamburger Menu
 function openNav() {
     document.getElementById("myNav").style.width = "100%";
@@ -113,5 +101,82 @@ function openNav() {
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
-} 
+}
+
+
+
+var $body = $('#about'),
+	$panel = $('.panel'),
+	$pContent = $('.panel__content'),
+	$img = $('.panel__img-col');
+
+function initTilt() {
+	TweenMax.set([$pContent, $img], { transformStyle: "preserve-3d" });
+
+	$body.mousemove(function(e) {
+		var sxPos = e.pageX / $panel.width() * 100 - 100;
+		var syPos = e.pageY / $panel.height() * 100 - 100;
+		TweenMax.to($pContent, 2, {
+			rotationY: 0.03 * sxPos,
+			rotationX: -0.03 * syPos,
+			transformPerspective: 500,
+			transformOrigin: "center center -400",
+			ease: Expo.easeOut
+		});
+		TweenMax.to($img, 2, {
+			rotationY: 0.03 * sxPos,
+			rotationX: -0.03 * syPos,
+			transformPerspective: 500,
+			transformOrigin: "center center -200",
+			ease: Expo.easeOut
+		});
+	});
+};
+
+initTilt();
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(3000)
+    .next()
+    .fadeIn(3000)
+    .end()
+    .appendTo('#slideshow');
+},  9000);
+
+
+console.clear();
+
+
+var mouse_Scroll = document.getElementById('mouse-scroll');
+
+var mouse_Scroll_Str = mouse_Scroll.getTotalLength();
+
+mouse_Scroll.setAttribute('stroke-dashoffset', mouse_Scroll_Str);
+mouse_Scroll.setAttribute('stroke-dasharray', mouse_Scroll_Str);
+
+
+
+//Typography effect for homepage
+$(function(){
+    $(".write").typed({
+        strings: ["SMARTER", "ENGAGING", "OUTSTANDING"],
+        typeSpeed: 0.7,
+        loop: !0, // did the trick for repeating
+        startDelay: 1000,
+        backDelay: 1000,
+    });
+    $(".weare").typed({
+        strings: ["We create voices which stand in noise"],
+        typeSpeed: 0.7,
+        loop: !0, // did the trick for repeating
+        startDelay: 1000,
+        backDelay: 1000,
+    });
+});
+
+
+ 
 

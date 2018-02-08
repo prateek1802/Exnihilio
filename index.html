@@ -7,70 +7,157 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-      <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Advent+Pro" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+     <!-- <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script> -->
       <link rel="stylesheet" type="text/css" href="style.css">
       <link rel="stylesheet" type="text/css" href="menu.css">
-      <script src="script/script.js"></script>
+      <link rel="stylesheet" type="text/css" href="slideshow.css">
       <!--Typing effect Script-->
       <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
       <!--Typing effect font scrio=pt-->
-      <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet"> 
+      
       <!-- Font awesome CDN -->
-      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      
       <!-- Vanilla Tilt -->
-      <script src="script/lib/vanilla-tilt.js"></script>
+    <!--  <script src="script/lib/vanilla-tilt.js"></script> -->
   </head>
     
   <body>
     <!--Loading class -->
-    <div class="loading">
+    <div class="container-fluid" id="loading">
       <img src="assets/exx.gif" style="width: 450px; height: 250px; margin-top: 150px" class="img-responsive">
     </div>
 
     <!--Rest of the Body-->
 
     <!-- Home Screen-->
-
     
-    <div class="container-fluid">
-        <!-- Hamburger Menu-->
+      
+    <!-- Use any element to open/show the overlay navigation menu -->
+   <div class="container-fluid" style="position:absolute;height:15%;padding-top:2%" id="head">
+     <div id="myNav" class="scrollTo overlay">
 
-        <div id="myNav" class="scrollTo overlay">
-
-            <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          
-            <!-- Overlay content -->
-            <div class="overlay-content">
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Clients</a>
-              <a href="#">Contact</a>
-            </div>
-          
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="#mainpage" onclick="closeNav()">Home</a>
+          <a href="#about" onclick="closeNav()">About</a>
+          <a href="#">Offerings</a>
+          <a href="#">Promotions</a>
+          <a href="#">Contact</a>
         </div>
-          
-        <!-- Use any element to open/show the overlay navigation menu -->
-        <span onclick="openNav()">open</span>
-
-      <div class="row scrollTo" id="home">
-        <p class="typo">We have the following qualities: <span class="write"></span></p>
+      
+    </div>
+      <a href="#"><span id="nav" onclick="openNav()"><img src="menuicon.png" style="height:30%;width:20%"></span></a>
+      <div class="col-xs-12" style="text-align:center;position:relative;z-index:5"><img src="logo.png" class="img-responsive"></div>
+    </div>
+    
+    <div class="container-fluid" id="content">
+        <!-- Hamburger Menu-->
+      <div class="row scrollTo" id="mainpage" style="position:relative; overflow: hidden;z-index:0;background-color:#cacaca">
+        <div class="col-xs-12" id="home">
+        <h2 class="typo"><b>MAKING COMMUNICATION</b></h2> 
+        <h1><strong><span class="write"></span></strong></h1><br>
+        <h5><strong>Who we are</strong>-"<span class="weare"></span>"</h5><br>
+        <br><h5 style="text-decoration:underline">Our Purpose of existence</h5>
+        <p><strong>"Advertisment doesn't work anymore, engagement does"</strong></p>
+       <p>We aim to enhance effective communication for organizations of<br>tomorrow helping you engage your target audience.</p>
+       
       </div>
-
+      <div class="col-xs-12" id="slides"><figure class="container" id="showcase">
+          <section></section>
+          <section></section>
+          <section></section>
+          <section></section>
+        </figure></div>
+        <div class="col-xs-12" id="scrollicon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20.375" height="65.375" viewBox="0 0 34.375 80.375">
+              <path id="mouse-scroll" d="M32.927,37.933c0,6.972-5.652,12.625-12.625,12.625h-6.333C6.997,50.558,1.344,44.905,1.344,37.933V13.917  c0-6.972,5.652-12.625,12.625-12.625l6.333,0c6.973,0,12.625,5.653,12.625,12.625V37.933zM19.198,15.125c0,1.104-0.895,2-2,2h-0.125c-1.104,0-2-0.896-2-2V9.166c0-1.104,0.896-2,2-2h0.125c1.105,0,2,0.896,2,2V15.125zM17.136 7.166 L17.166 1.437zM17.136 17.125 L17.136 23.208z"/>
+              <polyline id="arrow1" points="26.948,58.5 17.136,68.313   7.323,58.5 "/>
+              <polyline id="arrow2" points="26.948,65.25 17.136,75.063   7.323,65.25 "/>
+              </svg>
+        </div>
+    </div>
+    
       <!-- About Screen-->
       <div class="row scrollTo" id="about">
+        <div class="wrapper">
+	
+          <div class="panel">
+            <div class="panel__content-col">
+              <div class="panel__content">
+                <div class="panel__text">
+                  <h1 class="panel__title">About Us</h1>
+                  <p class="panel__addr">At Exnihilo,the fight of ideas <br> lands on the ground of reality <br> guided by our mission & vision.</p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="panel__img-col" id="slideshow">
         
+              <div class="panel__img"> 
+                  <h2><i>"KEEP CALM AND CONTINUE EVOLVING"</i></h2>
+                  <br>
+                <h3>Mission</h3>
+                <p><i>Create an environment to support organizations of tomorrow in nurturing and communicating ideas creatively & effectively.</i></p>
+                <h3>Vision</h3>
+                <p><i>Enabling smarter brand communications for evolving time & needs.</i></p>
+                <br> <h4 style="text-decoration:underline">Get Everything You Seek</h4>
+                <p><strong>"Give us your formal requirements... and your wish beyond it!"</strong></p>
+                <p>Tell us your idea the way you envision it.</p>
+              </div>
 
+              <div class="panel__img">
+
+                  <h2 style="text-decoration:underline">Core Values</h2>
+                  <br>
+                  <h3>Creativity</h3>
+                  <p><i>“Creativity is a wild mind with a disciplined eye” – Dorothy Parker</i></p>
+                  <p>Our Core value of creativity is the central to providing a great offering which helps our customers communicate with theirs uniquely & effectively.</p>
+                  <br>
+                  <h3>Sincerity</h3>
+                  <p><i>“Sincerity and truth are the basis of every virtue” – Confucius</i></p>
+                  <p>Staying true to customer’s need and delivery to perfection is guided by our core value of sincerity.</p>
+                  
+              </div>
+                
+              <div class="panel__img">
+                  <br>
+                  <br>
+                    <h3>Inclusive Stakeholders’ development</h3>
+                    <p><i>“We are less when we don’t include everyone” – Stuart Milk</i></p>
+                    <p>Our objective of sustained growth is guided by inclusivity which motivates us to begin alone and succeed inclusively with all our stakeholders.</p>
+                  <br>
+                  <br>
+                    <h3>Ethics</h3>
+                    <p><i>“Doing the right thing doesn’t always bring success. But compromising ethics almost always leads to failure” – Erika Anderson</i></p>
+                    <p>The word ethics says it all. An absolutely uncompromising aspect in our endeavors.</p>
+              </div>
+
+              <div class="panel__img">
+                    <h3>Professionalism</h3>
+                    <p><i>“Commitment to one’s work as a career so that one’s work becomes part of one’s identity is professionalism” – Eliot Friedson</i></p>
+                    <p>The word defines our actions with commitment & dedication. To us, it is how our clients feel about us while we are on the job.</p>
+          
+              </div>
+            </div>
+          </div>
+          
+        </div>   
+     
       </div>
       <!--Contact Screen -->
       <div class="row scrollTo" id="contact">
       </div>
 
     </div>
-    
+    <script src="script/script.js"></script>
   </body>
 </html>
