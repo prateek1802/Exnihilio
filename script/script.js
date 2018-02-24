@@ -144,14 +144,11 @@ setInterval(function() {
     .fadeIn(3000)
     .end()
     .appendTo('#slideshow');
-},  9000);
+},9000);
 
 
 console.clear();
-
-
 var mouse_Scroll = document.getElementById('mouse-scroll');
-
 var mouse_Scroll_Str = mouse_Scroll.getTotalLength();
 
 mouse_Scroll.setAttribute('stroke-dashoffset', mouse_Scroll_Str);
@@ -177,6 +174,6 @@ $(function(){
     });
 });
 
+//About Fades in Scrolling
 
- 
 

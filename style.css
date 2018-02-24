@@ -21,16 +21,20 @@ body,html{
     background-blend-mode: lighten;
     background-color: #cacaca;
 }
+
 #nav{
     position: fixed;
     z-index: 10;
 }
+
 #bars{
     padding: 10px 10px 10px 10px;
 }
+
 #head{
     display: none;
 }
+
 #content{
     height: 100%;
     display: none;
@@ -50,54 +54,54 @@ body,html{
     padding-left: 1%;
 }
 
-#slides {
+#slides{
     overflow: hidden;
-     position: absolute;
-     z-index: 1;
-     height: 100%;
-     width: 100%;
-     /*padding-top: 50px;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    /*padding-top: 50px;
     /* width: 100%;*/
-   }
+}
 
 .typo{
     color: rgb(31, 31, 31);
 }
 
-
-
 #about{
-    box-sizing: border-box;
-    width: 100%;
+  box-sizing: border-box;
+  width: 100%;
   height: 100%;
   font-family: 'Advent Pro', sans-serif;
   background-color: #cacaca;
   color: rgb(31, 31, 31);
   -webkit-font-feature-settings: "kern" 1,"liga" 1,"frac" 1, "lnum" 1;
-          font-feature-settings: "kern" 1,"liga" 1,"frac" 1, "lnum" 1;
+  font-feature-settings: "kern" 1,"liga" 1,"frac" 1, "lnum" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*opacity: 1;*/
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
-.wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 5vh 5%;
-  }
+.wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 5vh 5%;
+}
   
-  .panel {
+.panel{
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -106,29 +110,29 @@ body,html{
     max-width: 1200px;
     height: 90%;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     pointer-events: none;
-  }
+}
   
-  .panel__content-col {
+.panel__content-col {
     -ms-flex-preferred-size: 25%;
-        flex-basis: 25%;
-  }
+    flex-basis: 25%;
+}
   
-  .panel__content {
+.panel__content{
     position: absolute;
     top: 26%;
     left: 0;
     z-index: 2;
     width: 100%;
-  }
+}
   
-  .panel__text {
+.panel__text {
     display: inline-block;
     text-align: left;
-  }
+}
   
   .panel__img-col {
     padding-left: 1%;
